@@ -1,1 +1,1 @@
-# beautyMath
+# BeautyMath
