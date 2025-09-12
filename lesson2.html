@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathBeauty - Operações Básicas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .dica {
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--text-light);
+            padding: 15px;
+            border-radius: 15px;
+            margin: 15px 0;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .dica::before {
+            content: "\f0eb";
+            /* lâmpada */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            font-size: 20px;
+        }
+
+        article h3 {
+            color: white;
+            margin-top: 25px;
+        }
+
+        article p {
+            margin-bottom: 15px;
+        }
+
+        .exemplo {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .exemplo img {
+            width: 35rem;
+            max-width: 100%;
+            margin: 10px 0;
+            border-radius: 10px;
+        }
+
+        .resolucao {
+            background: #f8f9fa;
+            border-left: 5px solid var(--primary);
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header style="text-align: center;">
+        <div class="logo" style="text-align: center;"><i class="fa-solid fa-calculator"></i> MathBeauty</div>
+    </header>
+
+    <div class="container">
+        <article>
+            <h1 style="text-align: center;"><i class="fa-solid fa-plus-minus"></i> Operações Básicas</h1>
+            <div style="text-align: center; margin: 1.5rem;">
+                <img src="https://png.pngtree.com/png-clipart/20240617/original/pngtree-mathematical-symbol-icon-png-image_15349590.png"
+                    alt="Operações matemáticas">
+            </div>
+            <p>As operações básicas são a base da Matemática: adição, subtração, multiplicação e divisão. Elas aparecem
+                direta ou indiretamente em praticamente todas as questões de vestibular.</p>
+
+            <h3><i class="fa-solid fa-circle"></i> 1. Adição ( + )</h3>
+            <p>A adição representa o ato de juntar quantidades. Porém, nas provas da <strong>UECE</strong>, ela quase
+                nunca aparece de forma explícita (como 12 + 8). Em vez disso, é aplicada em <em>contextos
+                    interpretativos</em>, exigindo que o estudante identifique as informações no enunciado e as some
+                corretamente.</p>
+
+            <div class="dica">
+                💡 Dica UECE: Quando o enunciado fala em <strong>“total”, “ao todo”, “soma de valores”, “população
+                    conjunta” ou “número acumulado”</strong>, a operação escondida é a adição.
+            </div>
+
+            <div class="exemplo">
+                <img src="https://s3.static.brasilescola.uol.com.br/be/2021/02/densidade-demografica.jpg"
+                    alt="Mapa de população"><br>
+                <strong>Exemplo 1 – População (questões de Geografia/Estatística):</strong><br><br>
+                Uma cidade tinha 82.350 habitantes em 2010. Em 2020, recebeu mais 7.420 migrantes e registrou o
+                nascimento de 4.380 crianças. Qual a população total ao final de 2020?
+
+                <p class="d-inline-flex gap-1">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Ver Resolução
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <strong>Resolução:</strong><br>
+                        82.350 + 7.420 + 4.380 = 94.150 habitantes.<br>
+                        <em>Note como a adição aqui envolve interpretação de dados populacionais.</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exemplo">
+                <img src="https://conceito.de/wp-content/uploads/2013/05/homework-2521144_1280.jpg"
+                    alt="Notas e médias"><br>
+                <strong>Exemplo 2 – Média aritmética (contexto clássico de vestibular):</strong><br><br>
+                Um aluno obteve as notas 6,5; 7,2; 8,3 e 9,0 em quatro provas. Qual foi sua média?
+                <p class="d-inline-flex gap-1">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Ver Resolução
+                    </button>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <strong>Resolução:</strong><br>
+                        Passo 1: Somar as notas → 6,5 + 7,2 + 8,3 + 9,0 = 31,0<br>
+                        Passo 2: Dividir pelo número de provas → 31,0 ÷ 4 = 7,75<br>
+                        <em>Perceba que a adição foi o primeiro passo para calcular a média.</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exemplo">
+                <img src="https://i0.wp.com/60mais.com.br/wp-content/uploads/2020/08/60-mais-dicas-para-viagem-ao-redor-do-mundo-03.jpg?fit=1000%2C664&ssl=1"
+                    alt="Moedas e notas"><br>
+                <strong>Exemplo 3 – Questão de consumo:</strong><br><br>
+                Laiza gasta R$ 2,80 por dia em passagem e R$ 6,20 em alimentação. Qual seu gasto em uma semana (7
+                dias)?
+
+                
+                <div class="resolucao">
+                    <strong>Resolução:</strong><br>
+                    Passo 1: Somar os gastos diários → 2,80 + 6,20 = 9,00<br>
+                    Passo 2: Multiplicar pelos 7 dias → 9,00 × 7 = 63,00<br>
+                    <em>A adição aparece como parte de uma estratégia maior, junto da multiplicação.</em>
+                </div>
+            </div>
+
+            <h3><i class="fa-solid fa-circle"></i> 2. Subtração ( – )</h3>
+            <p>
+                A subtração indica <strong>diferença entre valores</strong>. Em provas da <strong>UECE</strong>, ela
+                aparece muito em contextos de
+                comparação (quanto falta, quanto sobra, diferença de grandezas) ou de análise de dados (saldo, variação,
+                distância).
+            </p>
+
+            <div class="dica">
+                💡 Palavras-chave: <strong>“diferença”, “quanto falta”, “a menos que”, “resto”, “variação”</strong>.
+            </div>
+
+            <div class="exemplo">
+                <img src="https://www.onze.com.br/blog/wp-content/uploads/2019/11/shutterstock_394230274-770x478.png"
+                    alt="Compra e dinheiro"><br>
+                <strong>Exemplo 1 – Consumo:</strong><br><br>
+                Um produto custa R$ 40,00 e a pessoa tem R$ 27,50. Quanto falta para realizar a compra?
+                <div class="resolucao">
+                    40,00 – 27,50 = 12,50<br>
+                    <em>A subtração indica exatamente o valor que ainda precisa ser completado.</em>
+                </div>
+            </div>
+
+            <div class="exemplo">
+                <img src="https://www.infoescola.com/wp-content/uploads/2008/06/crescimento-populacional_237596851.jpg"
+                    alt="Gráfico de barras"><br>
+                <strong>Exemplo 2 – Variação populacional:</strong><br><br>
+                Em 2015, uma cidade tinha 132.800 habitantes. Em 2020, registrou 148.350 habitantes. Qual o aumento
+                absoluto da população?
+                <div class="resolucao">
+                    148.350 – 132.800 = 15.550 habitantes<br>
+                    <em>A operação “diferença” aparece em problemas de Geografia e Estatística.</em>
+                </div>
+            </div>
+
+            <div class="exemplo">
+                <img src="https://s1.static.brasilescola.uol.com.br/be/2023/01/mulher-asiatica-correndo-com-roupa-e-tenis-na-cor-laranja.jpg"
+                    alt="Corrida esportiva"><br>
+                <strong>Exemplo 3 – Distâncias:</strong><br><br>
+                Um atleta correu 12,4 km em um treino. Seu objetivo era atingir 15 km. Quantos quilômetros faltaram?
+                <div class="resolucao">
+                    15 – 12,4 = 2,6 km<br>
+                    <em>A subtração mede a diferença entre o valor planejado e o alcançado.</em>
+                </div>
+            </div>
+
+
+            <h3><i class="fa-solid fa-circle"></i> 3. Multiplicação ( × )</h3>
+            <p>
+                A multiplicação é a <strong>soma de parcelas iguais</strong>. Em provas da <strong>UECE</strong>, ela é
+                aplicada em
+                contextos de <em>proporcionalidade, escalas, progressões, juros e contagem</em>.
+            </p>
+
+            <div class="dica">
+                💡 Palavras-chave: <strong>“vezes”, “cada um”, “em dobro”, “proporção”, “produtividade”</strong>.
+            </div>
+
+            <div class="exemplo">
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/06/15/books-1866482_960_720.jpg" alt="Livros">
+                <strong>Exemplo 1 – Consumo escolar:</strong><br><br>
+                Cada caderno custa R$ 7,80. Qual o valor total de 12 cadernos?
+                <div class="resolucao">
+                    7,80 × 12 = 93,60<br>
+                    <em>Multiplicação aplica-se a parcelas repetidas: 12 vezes o mesmo preço.</em>
+                </div>
+            </div>
+
+            <div class="exemplo">
+                <img src="https://static.significados.com.br/foto/proporcao-1.jpg" alt="Escala de mapa">
+                <strong>Exemplo 2 – Escala:</strong><br><br>
+                Um mapa está na escala 1:200.000. Qual a distância real correspondente a 3,4 cm no mapa?
+                <div class="resolucao">
+                    3,4 × 200.000 = 680.000 cm = 6,8 km<br>
+                    <em>Multiplicação aqui é essencial para converter a escala em distância real.</em>
+                </div>
+            </div>
+
+            <div class="exemplo">
+                <img src="https://static.todamateria.com.br/upload/ju/ro/jurosimples-cke.jpg" alt="Juros simples">
+                <strong>Exemplo 3 – Juros simples:</strong><br><br>
+                Um capital de R$ 2.000,00 foi aplicado a juros simples de 3% ao mês, durante 5 meses. Qual o juro?
+                <div class="resolucao">
+                    J = C × i × t<br>
+                    J = 2000 × 0,03 × 5 = 300,00<br>
+                    <em>A multiplicação resolve problemas financeiros muito cobrados em vestibulares.</em>
+                </div>
+            </div>
+
+
+            <h3><i class="fa-solid fa-circle"></i> 4. Divisão ( ÷ )</h3>
+            <p>
+                A divisão reparte uma quantidade em <strong>partes iguais</strong>. Ela é aplicada em contextos de
+                <em>médias, razões, proporções, repartição de valores e velocidade média</em>.
+            </p>
+
+            <div class="dica">
+                💡 Palavras-chave: <strong>“para cada”, “dividido igualmente”, “média”, “razão”, “taxa”</strong>.
+            </div>
+
+            <div class="exemplo">
+                <img src="https://cdn.pixabay.com/photo/2017/01/23/23/46/pizza-2000616_960_720.jpg"
+                    alt="Pizza dividida">
+                <strong>Exemplo 1 – Repartição:</strong><br><br>
+                Uma pizza de 12 fatias foi dividida igualmente entre 4 amigos. Quantas fatias cada um recebeu?
+                <div class="resolucao">
+                    12 ÷ 4 = 3 fatias<br>
+                    <em>A divisão reparte quantidades em partes iguais.</em>
+                </div>
+            </div>
+
+            <div class="exemplo">
+                <img src="https://static.todamateria.com.br/upload/ve/lo/velocidade-media-cke.jpg"
+                    alt="Carro em movimento">
+                <strong>Exemplo 2 – Velocidade média:</strong><br><br>
+                Um carro percorreu 180 km em 3 horas. Qual sua velocidade média?
+                <div class="resolucao">
+                    Vm = ΔS ÷ Δt = 180 ÷ 3 = 60 km/h<br>
+                    <em>A divisão aparece em Física, especialmente em movimento uniforme.</em>
+                </div>
+            </div>
+
+            <div class="exemplo">
+                <img src="https://static.todamateria.com.br/upload/me/di/mediaaritmetica.jpg" alt="Cálculo de médias">
+                <strong>Exemplo 3 – Média aritmética:</strong><br><br>
+                Três alunos tiveram notas 6,0; 7,5 e 8,5. Qual a média?
+                <div class="resolucao">
+                    (6,0 + 7,5 + 8,5) ÷ 3 = 22,0 ÷ 3 = 7,33<br>
+                    <em>A divisão aparece para equilibrar valores em médias.</em>
+                </div>
+            </div>
+
+
+            <h3><i class="fa-solid fa-circle-info"></i> Dicas de prova</h3>
+            <div class="dica">
+                - Leia com atenção as palavras do enunciado: elas geralmente indicam a operação correta.<br>
+                - Adição e multiplicação aparecem em contextos de crescimento ou soma de quantidades.<br>
+                - Subtração e divisão aparecem em contextos de comparação, falta ou repartição.<br>
+                - O ENEM gosta de contextualizar essas operações em problemas de consumo, estatística e interpretação de
+                gráficos.
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <div class="container">
+            <h3>Siga-nos nas redes sociais</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i> #MathBeautyDuda</a>
+                <a href="#"><i class="fab fa-youtube"></i> MathBeauty Tutorials</a>
+                <a href="#"><i class="fab fa-tiktok"></i> @mathbeauty</a>
+            </div>
+            <p>&copy; 2023 MathBeauty - Aprendizado de Matemática com Estilo</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
