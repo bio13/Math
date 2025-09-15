@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MathBeauty - Conjuntos Numéricos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    .dica {
+      background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+      color: var(--text-light);
+      padding: 15px;
+      border-radius: 15px;
+      margin: 15px 0;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .dica::before {
+      content: "\f0eb"; /* lâmpada */
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      font-size: 20px;
+    }
+    article h3 {
+      color: white;
+      margin-top: 25px;
+    }
+    article p {
+      margin-bottom: 15px;
+    }
+    .exemplo {
+      background: var(--card-bg);
+      padding: 15px;
+      border-radius: 10px;
+      margin: 15px 0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .exemplo img {
+      width: 35rem;
+      max-width: 100%;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header style="text-align: center;">
+    <div class="logo" style="text-align: center;"><i class="fa-solid fa-calculator"></i> MathBeauty</div>
+  </header>
+
+  <div class="container">
+    <article>
+      <h1 style="text-align: center;"><i class="fa-solid fa-list-ol"></i> Conjuntos Numéricos</h1>
+      <div style="text-align: center; margin: 1.5rem;">
+        <img src="https://static.todamateria.com.br/upload/di/gr/digrama.jpg">
+      </div>
+      <p>Conjuntos numéricos agrupam números com características semelhantes. No vestibular, principalmente ENEM e UECE, compreender bem esses conjuntos ajuda em questões de contagem, operações e interpretação de problemas.</p>
+      <h3><i class="fa-solid fa-circle"></i> 1. Números Naturais (ℕ)</h3>
+      <p>Todos os números inteiros não-negativos e que não são "quebrados": 0, 1, 2, 3...</p>
+      <div class="dica">💡 Atenção: em algumas provas, 0 pode ou não estar incluído em ℕ. Leia sempre o enunciado!</div>
+      <div class="exemplo">
+        <strong>Exemplo:</strong> Um parque tem 15 bancos. Quantos bancos podem ser numerados com números naturais?  
+        <em>Resposta:</em> 0 a 15 → 16 números possíveis.
+        <img src="https://images.adsttc.com/media/images/62a8/bbd7/3e4b/314b/7c00/0002/newsletter/full_ARIA_metal_embankment_MAIN.jpg?1655225298" alt="Exemplo números naturais">
+      </div>
+      <h3><i class="fa-solid fa-circle"></i> 2. Números Inteiros (ℤ)</h3>
+      <p>Incluem todos os naturais e seus opostos negativos: ..., -3, -2, -1, 0, 1, 2, 3...</p>
+      <div class="dica">💡 Muito cobrados em problemas de temperaturas, balanço de contas e deslocamentos.</div>
+      <div class="exemplo">
+        <strong>Exemplo:</strong> Temperaturas em uma cidade: -2°C, 0°C, 5°C. Todos esses números são inteiros.  
+        <img src="https://static.escolakids.uol.com.br/2024/07/termometro-ambiente.jpg" alt="Temperaturas negativas e positivas">
+      </div>
+
+      <h3><i class="fa-solid fa-circle"></i> 3. Números Racionais (ℚ)</h3>
+      <p>Números que podem ser escritos como fração a/b, com a e b inteiros e b ≠ 0, ou simplesmente como números "quebrados": ... -1/2 - 4/6 - 0,1 - 34,05 ...</p>
+      <div class="dica">💡 Se o número pode ser representado como fração, ele é racional. ENEM gosta de usar frações e porcentagens.</div>
+      <div class="dica">💡 É comumente usado para questões com valores restantes para compras e se esse for o caso normalmente vai seguir a mesma lógica que está no exemplo abaixo.</div>
+      <div class="exemplo">
+        <strong>Exemplo:</strong> Joana pretende comprar um bíquini de 30 reais para ir para a praia, entretanto só possui 22,70. Quantos reais a mais Joana precisa para comprar o bíquini?<br><br>
+        <p>Nessa situação basta subtrair o valor exigido (nesse caso o valor do bíquini) pelo valor que tem disponível (nesse caso o valor que Joana tem) e encontrará a resposta: <br>30,00<br>-22,70<div style="width: 2.5rem; height: 2px; background-color: white; margin-top: -7px;"></div> 07,30<br> Logo, para comprar o bíquini Joana precisa de mais 7 reais e 30 centavos</p>
+        <img src="https://sertaonahora.com.br/wp-content/uploads/2022/12/direito-do-consumidor-por-que-exigir-a-nota-fiscal-na-hora-da-compra-scaled.jpg" alt="Exemplo número racional">
+      </div>
+
+      <h3><i class="fa-solid fa-circle"></i> 4. Números Irracionais (I)</h3>
+      <p>O conjunto dos números irracionais é representado por I. Reúne os números decimais não exatos com uma representação infinita e não periódica, por exemplo: 3,141592... ou 1,203040... ou, simplesmente, √2, √3, √5, ...<br>Os números irracionais não contêm os racionais. São conjuntos sem intersecção, ou seja, não se juntam com nenhum outro.<br><br> Em termos mais simples, são números que continuam infinitamente após a vírgula com algarismos que não se repetem de uma forma padronizada, apenas aleatoriamente. O exemplo mais comum é o π que equivale a: 3.14159265358...</p>
+      <div class="dica">💡 Normalmente estão associadas a questões de trigonometria ou medidas de figuras planas ou espaciais.</div>
+      <div class="dica">💡 Você nunca vai precisar calcular o valor de um número irracional em uma questão, apenas deverá usá-lo como se fosse uma letra, tipo √2. A não ser que ele já esteja arredondado e a questão diga para você usar</div>
+      <div class="exemplo">
+        <strong>Exemplo:</strong> Sabendo que um lado de um quadrado mede √5 qual será o perímetro dele?<br><br>Para resolver isso, você precisa ter em mente duas coisas: <ol><li>Todos os lados de um quadrado vão sempre medir a mesma coisa.</li><li>Você não vai calcular quanto vale a raiz de 5! Vai apenas multiplicar pelo número de lados.</li></ol>Sendo assim, todos os lados valem √5:<br> √5 + √5 + √5 + √5 <br> Dessa forma, vemos que como um quadrado tem 4 lados, logo o perímetro será 4 (quantidade de lados do quadrado) vezes √5 (Medida de cada um deles). Que ficará assim:<br> 4√5.<br>
+        <img src="https://img.freepik.com/vetores-premium/ilustracao-isometrica-de-grama_87436-177.jpg" alt="Quadrado com lado √5">
+      </div>
+
+      <h3><i class="fa-solid fa-circle"></i> 5. Números Reais (ℝ)</h3>
+      <p>União de todos os racionais e irracionais. Qualquer número que pode ser colocado na reta numérica.<br><br> Ele abrange todos os conjuntos abordados até o momento.</p>
+      <div class="dica">💡 Sempre que o problema envolver medidas contínuas, distâncias ou grandezas físicas, estamos lidando com números reais.</div>
+      <div class="dica">💡 Normalmente eles são usados pra todo tipo de questão por abrangerem todos os outros abordados.</div>
+      <div class="exemplo">
+        <strong>Exemplo:</strong> Medida de um terreno: 5,7 m → número real. <br>
+        <img src="https://arquivos.respondeai.com.br/seo-mirror/book-exercise/2025/03a2bce2-3215-404a-af7a-23eff50d8ef9.webp" alt="Números reais na reta">
+      </div>
+
+      <h3><i class="fa-solid fa-circle-info"></i> Dicas de prova</h3>
+      <div class="dica">
+        - Questões de interpretação de gráficos ou tabelas costumam envolver ℕ e ℤ.<br>
+        - Problemas com porcentagem, frações ou médias envolvem ℚ.<br>
+        - Geometria ou medidas contínuas podem envolver I ou ℝ.<br>
+        <h2>Não se prenda a definição deles, apenas saiba que cada um é utilizado para coisas diferentes.</h2>
+      </div>
+
+    </article>
+  </div>
+
+  <footer>
+        <div class="container">
+            <h3>Siga-nos nas redes sociais</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i> #MathBeauty</a>
+                <a href="#"><i class="fab fa-youtube"></i> MathBeauty Tutorials</a>
+                <a href="#"><i class="fab fa-tiktok"></i> @mathbeauty</a>
+            </div>
+            <p>&copy; 2023 MathBeauty - Aprendizado de Matemática com Estilo</p>
+        </div>
+    </footer>
+
+    <!-- fim do conteúdo da lição -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Defina o ID da lição correspondente a essa página
+    const lessonId = 1; // alterar para 2, 3, 4, etc. conforme a lição
+
+    // Salvar como concluído no localStorage
+    let savedProgress = JSON.parse(localStorage.getItem('lessonProgress')) || {};
+    if (!savedProgress[lessonId]) {
+        savedProgress[lessonId] = true;
+        localStorage.setItem('lessonProgress', JSON.stringify(savedProgress));
+    }
+
+    // Atualizar progresso visual (barras e pontos)
+    if (typeof updateProgress === 'function') {
+        updateProgress('lesson', true);
+    }
+
+    console.log(`Lição ${lessonId} marcada como concluída!`);
+});
+</script>
+</body>
+
+</html>

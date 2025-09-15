@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathBeauty - Proporcionalidade</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilos específicos para a página de Proporcionalidade */
+        .content-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .dica {
+            background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--text-light);
+            padding: 15px;
+            border-radius: 15px;
+            margin: 20px 0;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .dica::before {
+            content: "\f0eb";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            font-size: 20px;
+            background: var(--primary);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .aplicacao {
+            background: var(--beige);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--success);
+            font-style: italic;
+        }
+
+        .exemplo {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--primary);
+        }
+
+        .exemplo img {
+            width: 100%;
+            max-width: 500px;
+            margin: 15px 0;
+            border-radius: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .resolucao {
+            background: #333;
+            border-left: 5px solid var(--primary);
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 8px;
+        }
+
+        math mn,
+        math mi {
+            font-size: large;
+            margin: 0.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo"><i class="fa-solid fa-calculator"></i> MathBeauty</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html #content" data-bs-target="content">Conteúdos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-container">
+        <article>
+            <h1 style="text-align: center;"><i class="fa-solid fa-scale-balanced"></i> Proporcionalidade</h1>
+            <div style="text-align: center; margin: 1.5rem;">
+                <img src="https://sinproconhecer.sinprolondrina.com.br/wp-content/uploads/2023/07/grandeza.jpg"
+                    alt="Proporcionalidade" class="img-thumbnail">
+            </div>
+            <p>A proporcionalidade é um conceito matemático fundamental que descreve a relação entre duas grandezas. É
+                amplamente utilizada em problemas do cotidiano e é frequentemente cobrada em vestibulares como a UECE.
+            </p>
+
+            <h3><i class="fa-solid fa-circle"></i> 1. Razão</h3>
+            <p>
+                A <strong>razão</strong> é a comparação entre duas grandezas da mesma espécie feita por meio de uma
+                divisão.
+                Já a <strong>proporção</strong> é a igualdade entre duas razões. <br><br>
+                Em termos simples:
+                <br> - Se temos duas quantidades <em>a</em> e <em>b</em>, a razão entre elas é
+                <math>
+                    <mfrac>
+                        <mi>a</mi>
+                        <mi>b</mi>
+                    </mfrac>
+                </math>.
+                <br> - Se duas razões são iguais, como
+                <math>
+                    <mfrac>
+                        <mi>a</mi>
+                        <mi>b</mi>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mi>c</mi>
+                        <mi>d</mi>
+                    </mfrac>
+                </math>, temos uma proporção.
+            </p>
+            <p>
+                Exemplos de aplicação prática:<br>
+                - Comparar a altura de duas pessoas;<br>
+                - Verificar o consumo de combustível por quilometragem;<br>
+                - Relacionar mapas e escalas reais.
+            </p>
+
+            <div class="dica">
+                💡 Dica UECE: Sempre verifique se as grandezas comparadas estão na mesma unidade.
+                Por exemplo, não compare metros com centímetros sem antes converter.
+            </div>
+
+            <div class="exemplo">
+                <img src="https://files.cercomp.ufg.br/weby/up/243/o/_DSC0419.jpg" alt="Razão e proporção"><br>
+                <strong>Exemplo 1 – Razão:</strong><br><br>
+                Em uma sala de aula, a razão entre o número de meninas e meninos é de
+                <math>
+                    <mfrac>
+                        <mn>3</mn>
+                        <mn>5</mn>
+                    </mfrac>
+                </math>.
+                Se há 15 meninas, quantos meninos há na sala?
+
+                <div class="resolucao">
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                            Ver Resolução
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseExample1">
+                        <div class="card card-body">
+                            <strong>Resolução:</strong><br>
+                            A razão meninas/meninos:
+                            <math>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mn>5</mn>
+                                </mfrac>
+                            </math><br><br>
+
+                            Montamos a proporção:<br>
+                            <math>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mn>5</mn>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>15</mn>
+                                    <mi>x</mi>
+                                </mfrac>
+                            </math><br><br>
+
+                            Resolvendo:<br>
+                            <math>
+                                <mn>3</mn>
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mn>75</mn>
+                            </math><br>
+                            <math>
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mn>25</mn>
+                            </math><br><br>
+
+                            <em>Resposta: Há 25 meninos na sala.</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h3><i class="fa-solid fa-circle"></i> 2. Proporcionalidade Direta</h3>
+            <p>
+                Duas grandezas são diretamente proporcionais quando, ao aumentarmos uma, a outra também aumenta na mesma
+                proporção, ou quando diminuímos uma, a outra também diminui.<br><br>
+                Para resolver situações assim, siga os passos:<br>
+                1) Identifique as grandezas envolvidas (por exemplo: quantidade de produtos e preço total).<br>
+                2) Verifique se, ao aumentar uma, a outra também aumenta, confirmando que é relação direta.<br>
+                3) Monte a proporção em forma de fração e resolva pelo produto cruzado.
+            </p>
+            <div class="aplicacao">
+                <strong>Exemplo:</strong> Se 5 cadernos custam R$ 25,00, qual será o preço de 8 cadernos?<br>
+                <strong>Como é direta, montamos:</strong>
+                <br><br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mfrac>
+                        <mn>5</mn>
+                        <mn>8</mn>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mn>25</mn>
+                        <mi>X</mi>
+                    </mfrac>
+                </math>
+                <br><br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mn>5</mn>
+                    <mi>X</mi>
+                    <mo>=</mo>
+                    <mn>25</mn>
+                    <mo>×</mo>
+                    <mn>8</mn>
+                </math><br><br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>X</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mn>25</mn>
+                            <mo>×</mo>
+                            <mn>8</mn>
+                        </mrow>
+                        <mn>5</mn>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mn>40</mn>
+                </math>
+                <br><br>
+                <strong>Portanto, 8 cadernos custam R$ 40,00.</strong>
+            </div>
+
+            <div class="exemplo">
+                <img src="https://www.aulasecursos.com.br/wp-content/uploads/2023/02/O-que-se-aprende-no-curso-de-eletricista-scaled.jpeg" alt="Proporcionalidade direta"><br>
+                <strong>Exemplo 1 – Proporcionalidade Direta:</strong><br><br>
+                Um técnico de manutenção, ao inspecionar a rede elétrica de um campus universitário, verificou que 12
+                metros de fio de cobre pesam 9,6 kg. Mantendo a mesma densidade e espessura do material, o peso de 30
+                metros desse mesmo fio será igual a
+
+                <div class="resolucao">
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                            Ver Resolução
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseExample2">
+                        <div class="card card-body">
+                            <strong>Resolução:</strong><br>
+                            A relação entre o comprimento do fio e seu peso é diretamente proporcional. Podemos montar a
+                            seguinte regra de três simples:
+                            <br><br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mn>12</mn>
+                                    <mn>9.6</mn>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>30</mn>
+                                    <mi>x</mi>
+                                </mfrac>
+                            </math>
+                            <br><br>
+                            Resolvendo a proporção, temos:
+                            <br><br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>12</mn>
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mn>9.6</mn>
+                                <mo>×</mo>
+                                <mn>30</mn>
+                            </math><br><br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mrow>
+                                        <mn>288</mn>
+                                    </mrow>
+                                    <mn>12</mn>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mn>24</mn>
+                            </math>
+                            <br><br>
+                            <em>Resposta: O peso de 30 metros de fio será 24 kg.</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3><i class="fa-solid fa-circle"></i> 3. Proporcionalidade Inversa</h3>
+            <p>
+                Duas grandezas são inversamente proporcionais quando, ao aumentarmos uma, a outra diminui na mesma
+                proporção.<br><br>
+                Para resolver situações assim, siga os passos:<br>
+                1) Identifique as grandezas envolvidas (por exemplo: número de pessoas e tempo de trabalho).<br>
+                2) Verifique se, ao aumentar uma, a outra diminui, confirmando que é relação inversa.<br>
+                3) Monte a proporção multiplicando em cruz, lembrando que em casos inversos os termos se “invertem” na
+                comparação.
+            </p>
+            <div class="aplicacao">
+                <strong>Exemplo:</strong> Se 8 operários constroem um muro em 6 dias, em quantos dias 12 operários farão
+                o mesmo trabalho?<br>
+                <strong>Como é inversa, montamos:</strong><br><br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mfrac>
+                        <mn>8</mn>
+                        <mn>12</mn>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mi>X</mi>
+                        <mn>6</mn>
+                    </mfrac>
+                </math>
+                <br><br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mn>12</mn>
+                    <mi>X</mi>
+                    <mo>=</mo>
+                    <mn>48</mn>
+                </math><br><br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>X</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mn>48</mn>
+                        <mn>12</mn>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mn>4</mn>
+                </math><br><br>
+                <strong>Portanto, 12 operários construirão o muro em 4 dias.</strong>
+            </div>
+
+            <div class="exemplo">
+                <img src="https://live.staticflickr.com/3912/14532859200_a81ffb77d2_b.jpg"
+                    alt="Proporcionalidade inversa"><br>
+                <strong>Exemplo 1 – Proporcionalidade Inversa:</strong><br><br>
+                Uma torneira enche um tanque em 12 horas. Em quanto tempo 3 torneiras iguais, funcionando juntas,
+                encherão o mesmo tanque?
+
+                <div class="resolucao">
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample3">
+                            Ver Resolução
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+                            <strong>Resolução:</strong><br>
+                            Como as grandezas (número de torneiras e tempo) são inversamente proporcionais:<br><br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mn>1</mn>
+                                    <mn>3</mn>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mi>X</mi>
+                                    <mn>12</mn>
+                                </mfrac>
+                            </math><br><br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>3</mn>
+                                <mi>X</mi>
+                                <mo>=</mo>
+                                <mn>12</mn>
+                            </math><br><br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>X</mi>
+                                <mo>=</mo>
+                                <mn>4</mn>
+                            </math><br>
+                            <em>Resposta: 3 torneiras encherão o tanque em 4 horas.</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <h3><i class="fa-solid fa-circle"></i> 4. Regra de Três Simples</h3>
+            <p>
+                É um método para resolver problemas que envolvem duas grandezas direta ou inversamente
+                proporcionais.<br><br>
+                Para resolver:<br>
+                1) Identifique as grandezas e se a relação é direta ou inversa.<br>
+                2) Monte a proporção em forma de fração.<br>
+                3) Resolva pelo produto cruzado.
+            </p>
+            <div class="aplicacao">
+                <strong>Exemplo:</strong> Se 5 cadernos custam R$ 25,00, qual será o preço de 8 cadernos?<br><br>
+                <strong>Montamos:</strong><br><br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mfrac>
+                        <mn>5</mn>
+                        <mn>8</mn>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mn>25</mn>
+                        <mi>X</mi>
+                    </mfrac>
+                </math>
+                <br><br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mn>5</mn>
+                    <mi>X</mi>
+                    <mo>=</mo>
+                    <mn>25</mn>
+                    <mo>×</mo>
+                    <mn>8</mn>
+                </math><br><br>
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>X</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mrow>
+                            <mn>25</mn>
+                            <mo>×</mo>
+                            <mn>8</mn>
+                        </mrow>
+                        <mn>5</mn>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mn>40</mn>
+                </math>
+                <br><br>
+                <strong>Portanto, 8 cadernos custam R$ 40,00.</strong>
+            </div>
+
+
+            <div class="dica">
+                💡 Dica UECE: Identifique primeiro se as grandezas são direta ou inversamente proporcionais antes de
+                montar a regra de três.
+            </div>
+
+            <div class="exemplo">
+                <img src="https://www.expressocartransporte.com.br/wp-content/uploads/2022/09/viajar-de-carro.png"
+                    alt="Regra de três simples"><br>
+                <strong>Exemplo 1 – Regra de Três Simples:</strong><br><br>
+                Em uma viagem, um automóvel percorre <strong>180 km</strong> utilizando <strong>15 litros</strong> de
+                gasolina. Mantendo o mesmo rendimento, quantos litros de gasolina serão necessários para percorrer
+                <strong>300 km</strong>?
+
+                <div class="resolucao">
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample4">
+                            Ver Resolução
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseExample4">
+                        <div class="card card-body">
+                            <strong>Resolução:</strong><br>
+                            As grandezas são diretamente proporcionais:<br><br>
+
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mn>180</mn>
+                                    <mn>15</mn>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>300</mn>
+                                    <mi>x</mi>
+                                </mfrac>
+                            </math>
+                            <br><br>
+
+                            <!-- produto cruzado -->
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>180</mn>
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mn>15</mn>
+                                <mo>&#x00D7;</mo>
+                                <mn>300</mn>
+                            </math>
+                            <br>
+
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>180</mn>
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mn>4500</mn>
+                            </math>
+                            <br>
+
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>4500</mn>
+                                    <mn>180</mn>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mn>25</mn>
+                            </math>
+
+                            <br><br>
+                            <em>Resposta: Serão necessários <strong>25 litros</strong>.</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="exemplo">
+                <img src="https://cdn-ilbdkhh.nitrocdn.com/NpbAnPnOCWYvsRyXiMShehrqmuomQUjo/assets/images/optimized/rev-21bd61c/blocosarcanjo.com.br/wp-content/uploads/2024/03/muro-de-arrimo-1.jpg"
+                    alt="Regra de três composta"><br>
+                <strong>Exemplo 1 – Regra de Três Composta:</strong><br><br>
+                Se <strong>10 operários</strong> trabalhando <strong>8 horas por dia</strong> constroem <strong>200
+                    m</strong> de um muro em <strong>5 dias</strong>, quantos dias levarão <strong>15 operários</strong>
+                trabalhando <strong>6 horas por dia</strong> para construir <strong>300 m</strong> do mesmo muro?
+
+                <div class="resolucao">
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample5">
+                            Ver Resolução
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseExample5">
+                        <div class="card card-body">
+                            <strong>Resolução:</strong><br>
+                            Análise das grandezas (em relação aos dias):
+                            <br>
+                            - Operários: inversamente proporcionais (mais operários → menos dias).<br>
+                            - Horas por dia: inversamente proporcionais (mais horas → menos dias).<br>
+                            - Metros do muro: diretamente proporcionais (mais metros → mais dias).
+                            <br><br>
+
+                            Montando a proporção (lado esquerdo: situação inicial; lado direito: produto das variações):
+                            <br><br>
+
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mn>5</mn>
+                                    <mi>x</mi>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>15</mn>
+                                    <mn>10</mn>
+                                </mfrac>
+                                <mo>&#x00D7;</mo>
+                                <mfrac>
+                                    <mn>6</mn>
+                                    <mn>8</mn>
+                                </mfrac>
+                                <mo>&#x00D7;</mo>
+                                <mfrac>
+                                    <mn>200</mn>
+                                    <mn>300</mn>
+                                </mfrac>
+                            </math>
+                            <br><br>
+
+                            <!-- simplificações passo a passo -->
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mn>15</mn>
+                                    <mn>10</mn>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mn>2</mn>
+                                </mfrac>
+                                <mo>,</mo>
+                                <mfrac>
+                                    <mn>6</mn>
+                                    <mn>8</mn>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mn>4</mn>
+                                </mfrac>
+                                <mo>,</mo>
+                                <mfrac>
+                                    <mn>200</mn>
+                                    <mn>300</mn>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>2</mn>
+                                    <mn>3</mn>
+                                </mfrac>
+                            </math>
+                            <br><br>
+
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mn>5</mn>
+                                    <mi>x</mi>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mn>2</mn>
+                                </mfrac>
+                                <mo>&#x00D7;</mo>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mn>4</mn>
+                                </mfrac>
+                                <mo>&#x00D7;</mo>
+                                <mfrac>
+                                    <mn>2</mn>
+                                    <mn>3</mn>
+                                </mfrac>
+                            </math>
+                            <br><br>
+
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mrow>
+                                        <mn>3</mn>
+                                        <mo>&#x00D7;</mo>
+                                        <mn>3</mn>
+                                        <mo>&#x00D7;</mo>
+                                        <mn>2</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mn>2</mn>
+                                        <mo>&#x00D7;</mo>
+                                        <mn>4</mn>
+                                        <mo>&#x00D7;</mo>
+                                        <mn>3</mn>
+                                    </mrow>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>18</mn>
+                                    <mn>24</mn>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mn>4</mn>
+                                </mfrac>
+                            </math>
+                            <br><br>
+
+                            Portanto:
+                            <br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mn>5</mn>
+                                    <mi>x</mi>
+                                </mfrac>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>3</mn>
+                                    <mn>4</mn>
+                                </mfrac>
+                            </math>
+                            <br><br>
+
+                            Cruzando (produto em cruz):
+                            <br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>5</mn>
+                                <mo>&#x00D7;</mo>
+                                <mn>4</mn>
+                                <mo>=</mo>
+                                <mn>3</mn>
+                                <mi>x</mi>
+                            </math>
+                            <br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mn>20</mn>
+                                <mo>=</mo>
+                                <mn>3</mn>
+                                <mi>x</mi>
+                            </math>
+                            <br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mi>x</mi>
+                                <mo>=</mo>
+                                <mfrac>
+                                    <mn>20</mn>
+                                    <mn>3</mn>
+                                </mfrac>
+                                <mo>≈</mo>
+                                <mn>6.67</mn>
+                            </math>
+
+                            <br><br>
+                            <em>Resposta: Levarão aproximadamente <strong>20/3 ≈ 6,67 dias</strong> (ou 7 dias
+                                completos).</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exemplo">
+                <img src="https://hrcamargo.com.br/wp-content/uploads/elementor/thumbs/pavimento-r12l2w41hwg46nv119nv1h604476h0gtpy3ncffwxc.webp" alt="Regra de Três Composta"><br>
+                <strong>Exemplo 2 – Regra de Três Composta:</strong><br><br>
+                Para pavimentar uma estrada, 20 trabalhadores levam 15 dias, trabalhando 6 horas por dia.
+                Quantos dias serão necessários para que 30 trabalhadores, trabalhando 9 horas por dia,
+                façam o mesmo serviço?<br><br>
+
+                <div class="resolucao">
+                    <p class="d-inline-flex gap-1">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseExemplo2" aria-expanded="false" aria-controls="collapseExemplo2">
+                            Ver Resolução
+                        </button>
+                    </p>
+                    <div class="collapse" id="collapseExemplo2">
+                        <div class="card card-body">
+                            <strong>Resolução:</strong><br>
+                            - Mais trabalhadores → menos dias (inversamente proporcional).<br>
+                            - Mais horas por dia → menos dias (inversamente proporcional).<br>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Trabalhadores</th>
+                                        <th>Horas/dia</th>
+                                        <th>Dias</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>6</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>9</td>
+                                        <td>X</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br><br>
+                            Montamos:<br>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                                <mfrac>
+                                    <mrow>
+                                        <mn>20</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mn>30</mn>
+                                    </mrow>
+                                </mfrac>
+                                <mi>×</mi>
+                                <mfrac>
+                                    <mrow>
+                                        <mn>6</mn>
+                                    </mrow>
+                                    <mrow>
+                                        <mn>9</mn>
+                                    </mrow>
+                                </mfrac>
+                                <mi>=</mi>
+                                <mfrac>
+                                    <mrow>
+                                        <mi>X</mi>
+                                    </mrow>
+                                    <mrow>
+                                        <mn>15</mn>
+                                    </mrow>
+                                </mfrac>
+                            </math>
+                            <br><br>
+
+                            <strong>Passo 1:</strong> Multiplicando cruzado:<br>
+                            20 × 6 × 15 = 30 × 9 × X<br>
+                            1800 = 270X<br><br>
+
+                            <strong>Passo 2:</strong> Isolando X:<br>
+                            X = 1800 ÷ 270<br>
+                            X = 6,67 ≈ 7 dias.<br><br>
+
+                            <em>Resposta: 30 trabalhadores trabalhando 9h/dia farão o serviço em aproximadamente 7
+                                dias.</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h3><i class="fa-solid fa-circle-info"></i> Dicas de Prova - UECE</h3>
+            <div class="dica">
+                - Identifique claramente o tipo de proporcionalidade (direta ou inversa) antes de resolver<br>
+                - Em regra de três composta, analise cada grandeza separadamente em relação à grandeza principal<br>
+                - Preste atenção às unidades de medida e certifique-se de que estão compatíveis<br>
+                - Questões de proporcionalidade frequentemente aparecem em problemas de velocidade, trabalho e consumo
+            </div>
+        </article>
+    </div>
+
+    <footer>
+        <div class="container">
+            <h3>Siga-nos nas redes sociais</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i> #MathBeauty</a>
+                <a href="#"><i class="fab fa-youtube"></i> MathBeauty Tutorials</a>
+                <a href="#"><i class="fab fa-tiktok"></i> @mathbeauty</a>
+            </div>
+            <p>&copy; 2023 MathBeauty - Aprendizado de Matemática com Estilo</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+        <!-- fim do conteúdo da lição -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Defina o ID da lição correspondente a essa página
+    const lessonId = 1; // alterar para 2, 3, 4, etc. conforme a lição
+
+    // Salvar como concluído no localStorage
+    let savedProgress = JSON.parse(localStorage.getItem('lessonProgress')) || {};
+    if (!savedProgress[lessonId]) {
+        savedProgress[lessonId] = true;
+        localStorage.setItem('lessonProgress', JSON.stringify(savedProgress));
+    }
+
+    // Atualizar progresso visual (barras e pontos)
+    if (typeof updateProgress === 'function') {
+        updateProgress('lesson', true);
+    }
+
+    console.log(`Lição ${lessonId} marcada como concluída!`);
+});
+</script>
+
+</body>
+
+</html>
